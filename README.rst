@@ -6,7 +6,7 @@ Build
 
 |Build Status| |GitHub issues| |GitHub license|
 
-:Version: 0.0.0
+:Version: 0.1.0
 :Web: https://github.com/luismayta/zsh-rvm
 :Download: https://github.com/luismayta/zsh-rvm
 :Source: https://github.com/luismayta/zsh-rvm
