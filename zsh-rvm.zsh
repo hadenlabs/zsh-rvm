@@ -23,7 +23,7 @@ function rvm::install {
 }
 
 function rvm::custom {
-    if [[ -x "$(command which rvm)" ]]; then
+    if [ -e "${HOME}/.rvm" ]; then
         message_info "Installing ruby ${PACKAGE_NAME}"
         rvm install 2.5.3
         rvm use 2.5.3 --default
@@ -48,7 +48,7 @@ function rvm::init {
 
 rvm::init
 
-if [[ ! -x "$(command which rvm)" ]]; then
+if [ ! -e "${HOME}/.rvm" ]; then
     rvm::install
     rvm::post_install
 fi
