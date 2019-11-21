@@ -14,6 +14,7 @@ plugin_dir=$(dirname "${0}":A)
 
 # shellcheck source=/dev/null
 source "${plugin_dir}"/src/helpers/messages.zsh
+
 # shellcheck source=/dev/null
 source "${plugin_dir}"/src/helpers/tools.zsh
 
@@ -55,10 +56,9 @@ function rvm::post_install {
 }
 
 function rvm::init {
-    PATH=$(get_path)
     # Add RVM to PATH for scripting
-    [ -e "${HOME}/.rvm/bin" ] && export PATH="${PATH}:${HOME}/.rvm/bin"
-    [ -e "/usr/local/rvm/bin" ] && export PATH="${PATH}:/usr/local/rvm/bin"
+    path::append "${HOME}/.rvm/bin"
+    path::append "/usr/local/rvm/bin"
 }
 
 rvm::init
