@@ -10,14 +10,6 @@
 
 package_name=rvm
 
-plugin_dir=$(dirname "${0}":A)
-
-# shellcheck source=/dev/null
-source "${plugin_dir}"/src/helpers/messages.zsh
-
-# shellcheck source=/dev/null
-source "${plugin_dir}"/src/helpers/tools.zsh
-
 function rvm::install {
     message_info "Installing ${package_name}"
 
@@ -57,8 +49,8 @@ function rvm::post_install {
 
 function rvm::init {
     # Add RVM to PATH for scripting
-    path::append "${HOME}/.rvm/bin"
-    path::append "/usr/local/rvm/bin"
+    path_append "${HOME}/.rvm/bin"
+    path_append "/usr/local/rvm/bin"
 }
 
 rvm::init
