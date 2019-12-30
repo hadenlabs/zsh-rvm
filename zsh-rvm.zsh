@@ -30,7 +30,7 @@ function rvm::install {
 
 function rvm::custom {
     if [ -e "${HOME}/.rvm" ]; then
-        rmv::init
+        rvm::init
         message_info "Installing ruby ${rvm_package_name}"
         rvm install 2.5.3
         rvm install 2.7.0
