@@ -33,7 +33,8 @@ function rvm::custom {
         rmv::init
         message_info "Installing ruby ${rvm_package_name}"
         rvm install 2.5.3
-        rvm use 2.5.3 --default
+        rvm install 2.7.0
+        rvm use 2.7.0 --default
         message_success "Installed ${rvm_package_name}"
     fi
 }
