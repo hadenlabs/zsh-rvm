@@ -1,4 +1,4 @@
-# ~/.tmuxinator/zsh-rmv.yml
+# ~/.tmuxinator/zsh-rvm.yml
 name: zsh-rvm
 root: ./
 # Optional tmux socket
