@@ -4,7 +4,7 @@ MAINTAINER Luis Mayta <slovacus@gmail.com>
 
 ARG stage
 
-LABEL NAME zsh-gst-doc
+LABEL NAME zsh-rvm-doc
 
 ENV USERNAME developer
 
