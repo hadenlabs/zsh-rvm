@@ -16,18 +16,20 @@ function rvm::install::gpg {
 
 function rvm::init {
     # Add RVM to PATH for scripting
-    [ -e "${HOME}/.rvm/bin" ] && export PATH="${PATH}:${HOME}/.rvm/bin"
+    [ -e "${RVM_ROOT}/bin" ] && export PATH="${PATH}:${RVM_ROOT}/bin"
     [ -e "/usr/local/rvm/bin" ] && export PATH="${PATH}:/usr/local/rvm/bin"
 }
 
 function rvm::post_install {
     if type -p ruby > /dev/null; then
-        message_info "Installing gems ${RVM_PACKAGE_NAME}"
-        gem install tmuxinator \
-            cocoapods \
-            terminal-notifier
-        message_success "Installed ${RVM_PACKAGE_NAME}"
+        message_warning "Not exist Ruby"
+        return
     fi
+    message_info "Installing gems ${RVM_PACKAGE_NAME}"
+    gem install tmuxinator \
+        cocoapods \
+        terminal-notifier
+    message_success "Installed ${RVM_PACKAGE_NAME}"
 }
 
 function rvm::install {
@@ -43,13 +45,14 @@ function rvm::install {
 }
 
 function rvm::custom {
-    if [ -e "${HOME}/.rvm" ]; then
-        rvm::init
-        message_info "Installing ruby ${RVM_PACKAGE_NAME}"
-        rvm install 2.5.3
-        rvm install 2.7.0
-        rvm use 2.7.0 --default
-        message_success "Installed ${RVM_PACKAGE_NAME}"
+    if [ ! -e "${RVM_ROOT}" ]; then
+        message_warning "Not exist ${RVM_ROOT}"
         return
     fi
+    rvm::init
+    message_info "Installing ruby ${RVM_PACKAGE_NAME}"
+    rvm install 2.5.3
+    rvm install 2.7.0
+    rvm use 2.7.0 --default
+    message_success "Installed ${RVM_PACKAGE_NAME}"
 }
