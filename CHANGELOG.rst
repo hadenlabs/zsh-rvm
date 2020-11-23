@@ -11,7 +11,6 @@ This file uses change log convention from `keep a CHANGELOG`_.
 `0.1.0`_ - 2019-03-23
 ++++++++++++++++++++++
 
-
 .. _`Unreleased`: https://github.com/luismayta/zsh-rvm/compare/0.1.0...HEAD
 .. _`0.1.0`: https://github.com/luismayta/zsh-rvm/compare/0.0.0...0.1.0
 .. _`0.0.0`: https://gitlab.com/luismayta/zsh-rvm/compare/0.0.0...0.0.0
