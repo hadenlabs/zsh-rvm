@@ -21,5 +21,4 @@ rvm::internal::main::factory
 if ! type -p rsync > /dev/null; then rvm::internal::rync::install; fi
 if ! type -p tmux > /dev/null; then rvm::internal::rvm::install; fi
 if ! type -p tmuxinator > /dev/null; then rvm::internal::tmuxinator::install; fi
-[ -e "${RVM_TPM_PATH}" ] || rvm::internal::tpm::install
 rvm::internal::rvm::load

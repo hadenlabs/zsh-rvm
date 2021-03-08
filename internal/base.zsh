@@ -23,7 +23,7 @@ function rvm::internal::install::gpg {
     command curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -
 }
 
-function rvm::internal::rvm::init {
+function rvm::internal::rvm::load {
     # Add RVM to PATH for scripting
     [ -e "${RVM_ROOT}/bin" ] && export PATH="${PATH}:${RVM_ROOT}/bin"
     [ -e "/usr/local/rvm/bin" ] && export PATH="${PATH}:/usr/local/rvm/bin"
