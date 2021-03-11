@@ -48,11 +48,5 @@ installation:
   - 'docs/include/installation/antigen.md'
   - 'docs/include/installation/antibody.md'
 
-# How to use this project
-usage: |-
-  ```bash
-  make setup
-  ```
-
-examples:
-  - 'docs/examples/common.md'
+include:
+  - 'docs/functions.md'
