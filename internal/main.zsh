@@ -18,4 +18,6 @@ function rvm::internal::main::factory {
 
 rvm::internal::main::factory
 rvm::internal::rvm::load
-if ! type -p rvm > /dev/null; then rvm::internal::rvm::install; fi
+
+if ! core::exists curl; then rvm::internal::curl::install; fi
+if ! core::exists rvm; then rvm::internal::rvm::install; fi

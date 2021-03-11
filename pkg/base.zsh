@@ -1,12 +1,6 @@
 #!/usr/bin/env ksh
 # -*- coding: utf-8 -*-
 
-function rvm::dependences {
-    message_info "Installing dependences for ${RVM_PACKAGE_NAME}"
-    if ! type -p curl > /dev/null; then rvm::internal::curl::install; fi
-    message_success "Installed dependences for ${RVM_PACKAGE_NAME}"
-}
-
 function rvm::install {
     rvm::internal::rvm::install
 }
