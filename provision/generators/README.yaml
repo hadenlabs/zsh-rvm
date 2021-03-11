@@ -41,7 +41,6 @@ requirements: |-
 
   ```{bash}
   https://github.com/luismayta/zsh-core
-  https://github.com/luismayta/zsh-notify
   ```
 
 installation:

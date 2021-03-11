@@ -12,11 +12,11 @@ function rvm::internal::rvm::install {
 }
 
 function rvm::internal::install::gpg {
-    if type -p gpg > /dev/null; then
+    if core::exists gpg; then
         gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
     fi
 
-    if type -p gpg2 > /dev/null; then
+    if core::exists gpg2; then
         gpg2 --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
     fi
 
@@ -31,7 +31,7 @@ function rvm::internal::rvm::load {
 }
 
 function rvm::internal::packages::install {
-    if ! type -p gem > /dev/null; then
+    if ! core::exists gem; then
         message_warning "it's neccesary have gem"
         return
     fi
@@ -44,7 +44,7 @@ function rvm::internal::packages::install {
 }
 
 function rvm::internal::version::all::install {
-    if ! type -p rvm > /dev/null; then
+    if ! core::exists rvm; then
         message_warning "not found rvm"
         return
     fi
@@ -60,7 +60,7 @@ function rvm::internal::version::all::install {
 }
 
 function rvm::internal::version::global::install {
-    if ! type -p rvm > /dev/null; then
+    if ! core::exists rvm; then
         message_warning "not found rvm"
         return
     fi
