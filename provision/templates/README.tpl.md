@@ -21,15 +21,11 @@
 
 {{ if has (ds "config") "description" }} {{(ds "config").description }} {{ end }}
 
-{{ if has (ds "config") "company" }}
-This project is part of our comprehensive [{{ printf (ds "config").company.name}}]({{ printf (ds "config").company.url}}) examples of readme.
-{{end}}
-
 {{ if has (ds "config") "license" }}
 
 ## :page_facing_up: License
 
-{{ (ds "config").license }} is an open-sourced software licensed under the [{{(ds "config").license }} license](LICENSE.md).
+{{ (ds "config").name }} is an open-sourced software licensed under the [{{(ds "config").license }} license](LICENSE.md).
 
 {{ end }}
 
@@ -130,9 +126,6 @@ Please use the [issue tracker]({{ printf "https://github.com/%s/issues" (ds "con
 
 ### Developing
 
-If you are interested in being a contributor and want to get involved in developing this project or [help out]({{ printf (ds "config").company.url}})
-with our other projects, we would love to hear from you! Shoot us an [email](mailto:{{ printf (ds "config").email.support}}).
-
 In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 1.  **Fork** the repo on GitHub
@@ -164,10 +157,6 @@ Copyright © 2018-{{ time.Now.Year }} [Hadenlabs](https://hadenlabs.com)
 
 All other trademarks referenced herein are the property of their respective owners.
 
-## About
-
-This project is maintained and funded by [{{ printf (ds "config").copyright.name }}]({{ printf (ds "config").copyright.url }}). Like it? Please let us know at <{{ printf (ds "config").email.support }}>
-
 {{ if has (datasource "config") "contributors" }}
 
 ### :star: Contributors
@@ -190,6 +179,6 @@ This project is maintained and funded by [{{ printf (ds "config").copyright.name
 
 {{ end }}
 
-## Don't forget to 🌟 Star 🌟 the repo if you like this GitHub Action
+## Don't forget to 🌟 Star 🌟 the repo if you like {{(ds "config").name}}
 
 [Your feedback is appreciated]({{ printf "https://github.com/%s/issues" (ds "config").github_repo}})
