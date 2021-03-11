@@ -7,6 +7,7 @@ function rvm::internal::rvm::install {
 
     curl -sSL https://get.rvm.io | bash -s stable
     rvm get stable
+    rvm::internal::rvm::load
     message_success "Installed ${RVM_PACKAGE_NAME}"
 }
 

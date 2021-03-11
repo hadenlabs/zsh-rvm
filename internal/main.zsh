@@ -17,5 +17,5 @@ function rvm::internal::main::factory {
 }
 
 rvm::internal::main::factory
-if ! type -p rvm > /dev/null; then rvm::internal::rvm::install; fi
 rvm::internal::rvm::load
+if ! type -p rvm > /dev/null; then rvm::internal::rvm::install; fi
