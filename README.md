@@ -12,29 +12,45 @@
 
   -->
 
+ 
+
 # zsh-rvm
+ [![Lint](https://github.com/hadenlabs/zsh-rvm/actions/workflows/lint.yml/badge.svg?branch=develop)](https://github.com/hadenlabs/zsh-rvm/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/zsh-rvm.svg)](https://github.com/hadenlabs/zsh-rvm/issues) [![Latest Release](https://img.shields.io/github/release/hadenlabs/zsh-rvm.svg)](https://github.com/hadenlabs/zsh-rvm/releases)
 
-[![Lint](https://github.com/luismayta/zsh-rvm/actions/workflows/lint.yml/badge.svg?branch=develop)](https://github.com/luismayta/zsh-rvm/actions) [![Issues](https://img.shields.io/github/issues/luismayta/zsh-rvm.svg)](https://github.com/luismayta/zsh-rvm/issues) [![Latest Release](https://img.shields.io/github/release/luismayta/zsh-rvm.svg)](https://github.com/luismayta/zsh-rvm/releases)
+ zsh-rvm plugin for zsh. 
 
-zsh-rvm for zsh plugin
 
-This project is part of our comprehensive [hadenlabs](https://hadenlabs.com) examples of readme.
 
 ## :page_facing_up: License
 
-MIT is an open-sourced software licensed under the [MIT license](LICENSE.md).
+zsh-rvm is an open-sourced software licensed under the [MIT license](LICENSE.md).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Requirements
+
 
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
 ```{bash}
 https://github.com/luismayta/zsh-core
-https://github.com/luismayta/zsh-notify
 ```
 
-## Installation
 
+
+## Installation
 ### [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) users
 
 If you're using [oh-my-zsh](https://gitub.com/robbyrussell/oh-my-zsh), install this plugin by doing the following:
@@ -43,7 +59,6 @@ If you're using [oh-my-zsh](https://gitub.com/robbyrussell/oh-my-zsh), install t
 2.  Clone the plugin `bash git clone https://github.com/luismayta/zsh-rvm`bash
 3.  Edit your `.zshrc` and add `plugins=( ... zsh-rvm )` to your list of plugins
 4.  Open a new terminal and enjoy!
-
 ### [antigen](https://github.com/zsh-users/antigen) users
 
 If you're using [Antigen](https://github.com/zsh-lovers/antigen), install this plugin by doing the following:
@@ -51,7 +66,6 @@ If you're using [Antigen](https://github.com/zsh-lovers/antigen), install this p
 1.  Add `antigen bundle luismayta/zsh-rvm` to your `.zshrc` where you're adding your other plugins.
 2.  Either open a new terminal to force zsh to load the new plugin, or run `antigen bundle luismayta/zsh-rvm` in a running zsh session.
 3.  Enjoy!
-
 ### [antibody](https://github.com/getantibody/antibody) users
 
 If you're using [Antigen](https://github.com/getantibody/antibody), install this plugin by doing the following:
@@ -67,31 +81,60 @@ to your `.zshrc` where you're adding your other plugins.
 2.  Either open a new terminal to force zsh to load the new plugin, or run `antibody bundle luismayta/zsh-rvm` in a running zsh session.
 3.  Enjoy!
 
-## Usage
 
-```bash
-make setup
-```
 
-## :page_facing_up: Examples
 
-### common
+
+
+
+
+
+
+ ## Functions
+
+zsh rvm includes a small utility `rvm` to fetch and install new packages.
+
+#### `rvm::install`
+
+Install rvm.
+
+#### `rvm::load`
+
+Load path rvm.
+
+#### `rvm::upgrade`
+
+Upgrade version rvm.
+
+#### `rvm::package::all::install`
+
+Install all package of rvm.
+
+#### `rvm::install::versions`
+
+Install versions of config for rvm.
+
+#### `rvm::install::version::global`
+
+Install a version global of rvm.
+
+
+
+ 
 
 ## Help
 
 **Got a question?**
 
-File a GitHub [issue](https://github.com/luismayta/zsh-rvm/issues), send us an [email](email) or join our [Slack Community](slack).
+File a GitHub [issue](https://github.com/hadenlabs/zsh-rvm/issues), send us an [email](email) or join our [Slack Community](slack).
 
 ## Contributing
 
 ### Bug Reports & Feature Requests
 
-Please use the [issue tracker](https://github.com/luismayta/zsh-rvm/issues) to report any bugs or file feature requests.
+Please use the [issue tracker](https://github.com/hadenlabs/zsh-rvm/issues) to report any bugs or file feature requests.
 
 ### Developing
-
-If you are interested in being a contributor and want to get involved in developing this project or [help out](https://hadenlabs.com) with our other projects, we would love to hear from you! Shoot us an [email](mailto:support@hadenlabs.com).
 
 In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
@@ -107,18 +150,20 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 Releases are managed using github release feature. We use [Semantic Versioning](http://semver.org) for all the releases. Every change made to the code base will be referred to in the release notes (except for cleanups and refactorings).
 
+
+
 ## Copyright
 
 Copyright © 2018-2021 [Hadenlabs](https://hadenlabs.com)
+
+
 
 ## Trademarks
 
 All other trademarks referenced herein are the property of their respective owners.
 
-## About
 
-This project is maintained and funded by [Hadenlabs](https://hadenlabs.com). Like it? Please let us know at <support@hadenlabs.com>
 
-## Don't forget to 🌟 Star 🌟 the repo if you like this GitHub Action
+## Don't forget to 🌟 Star 🌟 the repo if you like zsh-rvm
 
-[Your feedback is appreciated](https://github.com/luismayta/zsh-rvm/issues)
+[Your feedback is appreciated](https://github.com/hadenlabs/zsh-rvm/issues)
