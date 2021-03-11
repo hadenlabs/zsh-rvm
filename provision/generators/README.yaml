@@ -7,18 +7,6 @@
 # Name of this project
 name: zsh-rvm
 
-company:
-  name: hadenlabs
-  description: |-
-    company labs
-  url: https://hadenlabs.com
-  github: https://github.com/hadenlabs
-  email: support@hadenlabs.com
-
-copyright:
-  name: Hadenlabs
-  url: https://hadenlabs.com
-
 email:
   support: support@hadenlabs.com
 
@@ -29,23 +17,23 @@ email:
 license: 'MIT'
 
 # Canonical GitHub repo
-github_repo: luismayta/zsh-rvm
+github_repo: hadenlabs/zsh-rvm
 
 # Badges to display
 badges:
   - name: Lint
-    image: https://github.com/luismayta/zsh-rvm/actions/workflows/lint.yml/badge.svg?branch=develop
-    url: https://github.com/luismayta/zsh-rvm/actions
-  - name: 'Issues'
-    image: 'https://img.shields.io/github/issues/luismayta/zsh-rvm.svg'
-    url: 'https://github.com/luismayta/zsh-rvm/issues'
-  - name: 'Latest Release'
-    image: 'https://img.shields.io/github/release/luismayta/zsh-rvm.svg'
-    url: 'https://github.com/luismayta/zsh-rvm/releases'
+    image: https://github.com/hadenlabs/zsh-rvm/actions/workflows/lint.yml/badge.svg?branch=develop
+    url: https://github.com/hadenlabs/zsh-rvm/actions
+  - name: Issues
+    image: https://img.shields.io/github/issues/hadenlabs/zsh-rvm.svg
+    url: https://github.com/hadenlabs/zsh-rvm/issues
+  - name: Latest Release
+    image: https://img.shields.io/github/release/hadenlabs/zsh-rvm.svg
+    url: https://github.com/hadenlabs/zsh-rvm/releases
 
 # Short description of this project
 description: |-
-  zsh-rvm for zsh plugin
+  zsh-rvm plugin for zsh.
 
 requirements: |-
 
