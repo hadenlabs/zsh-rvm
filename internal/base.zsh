@@ -37,9 +37,7 @@ function rvm::internal::packages::install {
     fi
 
     message_info "Installing required gem packages"
-    for package in "${RVM_PACKAGES[@]}"; do
-        gem install "${package}"
-    done
+    gem install "${RVM_PACKAGES[@]}"
     message_success "Installed required gem packages"
 }
 
