@@ -13,4 +13,5 @@ export RVM_PACKAGES=(
     tmuxinator
     cocoapods
     terminal-notifier
+    solargraph
 )
