@@ -15,11 +15,6 @@ function rvm::pkg::main::factory {
       ;;
     esac
 
-    # shellcheck source=/dev/null
-    source "${ZSH_RVM_PATH}"/pkg/helper.zsh
-
-    # shellcheck source=/dev/null
-    source "${ZSH_RVM_PATH}"/pkg/alias.zsh
 }
 
 rvm::pkg::main::factory

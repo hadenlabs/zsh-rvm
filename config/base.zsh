@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 export RVM_MESSAGE_BREW="Please install brew or use antibody bundle luismayta/zsh-brew branch:develop"
-export RVM_MESSAGE_RVM="Please install rvm or use antibody bundle luismayta/zsh-rvm branch:develop"
 export RVM_PACKAGE_NAME=rvm
 export RVM_ROOT="${HOME}"/.rvm
 export RVM_CACHE_DIR="${HOME}/.cache/rvm"
