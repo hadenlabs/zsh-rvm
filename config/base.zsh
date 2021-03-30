@@ -14,4 +14,5 @@ export RVM_PACKAGES=(
     cocoapods
     terminal-notifier
     solargraph
+    bundler
 )
