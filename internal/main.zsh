@@ -17,7 +17,9 @@ function rvm::internal::main::factory {
 }
 
 rvm::internal::main::factory
-rvm::internal::rvm::load
 
-if ! core::exists curl; then rvm::internal::curl::install; fi
+if ! core::exists curl; then core::install curl; fi
+if ! core::exists gpg; then core::install gpg; fi
+rvm::internal::rvm::load
 if ! core::exists rvm; then rvm::internal::rvm::install; fi
+
