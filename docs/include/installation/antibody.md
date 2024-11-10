@@ -1,11 +1,20 @@
+<!-- Space: Projects -->
+<!-- Parent: ZshRvm -->
+<!-- Title: Installation Antibody ZshRvm -->
+<!-- Label: ZshRvm -->
+<!-- Label: Project -->
+<!-- Label: Installation -->
+<!-- Include: docs/disclaimer.md -->
+<!-- Include: ac:toc -->
+
 ### [antibody](https://github.com/getantibody/antibody) users
 
 If you're using [Antibody](https://github.com/getantibody/antibody), install this plugin by doing the following:
 
-1.  Add :
+1. Add :
 
 ```{.sourceCode .bash}
-     antibody bundle hadenlabs/zsh-rvm
+antibody bundle hadenlabs/zsh-rvm
 ```
 
 to your `.zshrc` where you're adding your other plugins.

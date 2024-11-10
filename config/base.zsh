@@ -6,9 +6,9 @@ export RVM_PACKAGE_NAME=rvm
 export RVM_ROOT="${HOME}"/.rvm
 export RVM_CACHE_DIR="${HOME}/.cache/rvm"
 export RVM_VERSIONS=(
-    2.7.2
+    3.3.6
 )
-export RVM_VERSION_GLOBAL=2.7.2
+export RVM_VERSION_GLOBAL=3.3.6
 export RVM_PACKAGES=(
     tmuxinator
     cocoapods
