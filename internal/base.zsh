@@ -43,7 +43,7 @@ function rvm::internal::packages::install {
 
 function rvm::internal::version::install {
   local version=${1}
-  rvm install ${version}
+  rvm install ${version} -C --with-openssl-dir=/usr/local/etc/openssl@3
 }
 
 function rvm::internal::version::all::install {
